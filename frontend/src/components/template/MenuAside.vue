@@ -1,10 +1,10 @@
 <template>
   <aside class="menuAside" v-show="isMenuVisible">
-    <a href=""><h4>Colonoscopia</h4></a>
-    <a href=""><h4>Dessitometria</h4></a>
-    <a href=""><h4>Retossigmordoscopia</h4></a>
-    <a href=""><h4>Cirurgia SUSFACIL</h4></a>
-    <a href=""><h4>Cirurgia</h4> </a>
+    <router-link to="/colonoscopy"><h4>Colonoscopia</h4></router-link>
+    <router-link to="/densitometry"><h4>Dessitometria</h4></router-link>
+    <router-link to="/rectosigmoidoscopy"><h4>Retossigmordoscopia</h4></router-link>
+      <router-link to="/surgerysus"><h4>Cirurgia SUSFACIL</h4></router-link>
+        <router-link to="/surgery"><h4>Cirurgia</h4> </router-link>
   </aside>
 </template>
 

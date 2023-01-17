@@ -5,11 +5,12 @@ export default new createStore({
     state: {
         isMenuVisible: true,
         user:{
-            name:'ADM',
-            email:'mock@cod3r.com.br'
+            name:'Sair',
+           
         }
     },
     mutations: {
+        
         toggleMenu(state, isVisible) {
             
             if (isVisible === undefined) {

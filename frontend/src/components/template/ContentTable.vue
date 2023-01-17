@@ -1,16 +1,7 @@
 <template>
   <div class="content">
-    
-      <div class="content-filter">
-        <i class="fa fa-search fa-lg"></i>
-        <input
-          type="text"
-          placeholder="Digite um nome para filtrar...."
-          class="filter-field"
-        />
-        <button id="cadastrar" class="btn btn-primary">Cadastrar</button>
-      </div>
-    
+<router-view></router-view>
+     
   </div>
 </template>
 
@@ -18,11 +9,8 @@
 
 export default {
 
-  name: "ContentTable",
+  name: "ContentTable"
 
-  components: {
-   
-  },
 };
 </script>
 
