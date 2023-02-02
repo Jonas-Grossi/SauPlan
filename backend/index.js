@@ -7,7 +7,11 @@ const db = require('./config/db.js')
 
 app.db = db
 consign()
-    .then('./config/')
+    .include('./config/passport.js')
+    .then('./config/middlewares.js')
+    .then('./api/validation.js')
+    .then('./api')
+    .then('./config/routes.js')
     .into(app)
 app.listen(4000, () => {
     console.log('Backend executando...')

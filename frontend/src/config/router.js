@@ -1,25 +1,3 @@
-//import Vue from 'vue'
-/*
-import VueRouter from 'vue-router'
-
-import AuthLogin from '@/components/auth/AuthLogin'
-
-Vue.use(VueRouter)
-const routes = [{
-    name: 'AuthLogin',
-    path: '/auth',
-    component: AuthLogin
-
-}
-
-]
-const router = new VueRouter({
-    mode: 'history',
-    routes
-})
-export default router
-*/
-
 import AuthLogin from '@/components/auth/AuthLogin'
 import HomeDashboard from '@/components/home/HomeDashboard.vue'
 import RectoPatient from '@/components/pages/rectosigmoidoscopy/RectoPatient.vue'
@@ -39,33 +17,32 @@ const router = createRouter({
         },
         {
             name: 'auth',
-
             path: '/auth',
             component: AuthLogin
-        },{
-            name:'rectosigmoidoscopy',
-            path:'/rectosigmoidoscopy',
-            component:RectoPatient
+        }, {
+            name: 'rectosigmoidoscopy',
+            path: '/rectosigmoidoscopy',
+            component: RectoPatient
 
-        },{
-            name:'colonoscopy',
-            path:'/colonoscopy',
-            component:ColonoPatient
+        }, {
+            name: 'colonoscopy',
+            path: '/colonoscopy',
+            component: ColonoPatient
 
-        },{
-            name:'densitometry',
-            path:'/densitometry',
-            component:DensitPatient
+        }, {
+            name: 'densitometry',
+            path: '/densitometry',
+            component: DensitPatient
 
-        },{
-            name:'surgery',
-            path:'/surgery',
-            component:SurgeryPatient
+        }, {
+            name: 'surgery',
+            path: '/surgery',
+            component: SurgeryPatient
 
-        },{
-            name:'surgerysus',
-            path:'/surgerysus',
-            component:SurgerySus
+        }, {
+            name: 'surgerysus',
+            path: '/surgerysus',
+            component: SurgerySus
 
         }
     ]

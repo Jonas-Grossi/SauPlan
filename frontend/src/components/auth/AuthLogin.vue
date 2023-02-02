@@ -1,7 +1,7 @@
 <template>
   <div class="auth-content">
     <div class="auth-modal">
-      <img src="" alt="Logo" />
+      <img src="@/assets/logo.png" alt="Logo" />
       <hr />
 
       <div class="auth-title">{{ showSignup ? "Cadastro" : "Login" }}</div>
@@ -12,7 +12,7 @@
         placeholder="Nome"
       />
       <input
-        v-model="user.password"
+      
         name="password"
         type="password"
         placeholder="Senha"

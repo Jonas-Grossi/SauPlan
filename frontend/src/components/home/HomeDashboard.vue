@@ -4,6 +4,8 @@
       icon="fa fa-home"
       main=" Dashboard"
       sub="Prefeitura de Silveirânia"
+      but="false"
+      search="false"
     
     />
   </div>

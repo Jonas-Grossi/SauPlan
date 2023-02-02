@@ -5,10 +5,10 @@
         <i v-if="icon" :class="icon">{{ main }}</i>
       </h1>
       <h2>{{ sub }}</h2>
-      <button class="btn btn-primary">Cadastrar</button>
+      <button v-if=!but class="btn btn-primary">Cadastrar</button>
     </div>
     <hr />
-    <div class="content-filter">
+    <div v-if=!search class="content-filter">
       <i class="fa fa-search fa-lg"></i>
       <input
         type="text"
@@ -22,7 +22,8 @@
 <script>
 export default {
   name: "PageTitle",
-  props: ["icon", "main", "sub","but"],
+  props: ["icon", "main", "sub","but","search"],
+
 };
 </script>
 

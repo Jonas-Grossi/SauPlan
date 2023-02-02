@@ -3,17 +3,17 @@ exports.up = function (knex, Promise) {
     return knex.schema.createTable('rectosigmoidoscopy', table => {
 
         table.increments('id').primary()
-        table.string('name').notNull()
-        table.string('cel')
+        table.string('name').notNull().unique()
+        table.string('cel').notNull().unique()
         table.string('email')
-        table.string('prioridade').notNull()
-        table.string('dataSolicitacao').notNull()
-        table.string('dataEntrada').notNull()
-        table.string('dataMarcada').notNull()
-        table.string('localConsulta').notNull()
+        table.string('priory').notNull()
+        //corrigir datas
+        table.string('dateSolicit').notNull()
+        table.string('dateInput').notNull()
+        table.string('markedData').notNull()
+        table.string('localConsult').notNull()
         table.string('status').notNull()
         table.string('obs')
-
     })
 
 };
